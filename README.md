@@ -91,43 +91,6 @@ npm start
 
 ---
 
-## 🌐 API Routes
-
-### Root
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/` | Health check |
-
-Example response:
-
-```text
-Ledger Service is up and running
-```
-
-### 🔐 Authentication
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/api/auth/register` | Register a new user |
-| POST | `/api/auth/login` | Login a user |
-
-### 🏦 Accounts
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/api/accounts` | Create a bank account |
-| GET | `/api/accounts` | Get authenticated user's account |
-| GET | `/api/accounts/balance/:accountId` | Get account balance |
-
-### 🔄 Transactions
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/api/transaction` | Transfer funds between accounts |
-
----
-
 ## 📒 Ledger-Based Accounting
 
 Instead of storing a separate transaction history, every transfer is recorded as **ledger entries**.
